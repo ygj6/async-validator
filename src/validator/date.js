@@ -22,6 +22,8 @@ function date(rule, value, callback, source, options) {
       }
 
       rules.type(rule, dateObject, source, errors, options);
+      dateObject =
+        typeof value === 'number' ? dateObject : new Date(dateObject);
       if (dateObject) {
         rules.range(rule, dateObject.getTime(), source, errors, options);
       }
