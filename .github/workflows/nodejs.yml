@@ -32,6 +32,6 @@ jobs:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         parallel: true
         path-to-lcov: ./coverage/lcov.info
-      if: ${{ matrix.test-type }} == coverage
+      if: matrix.test-type == coverage
       env:
         CI: true
