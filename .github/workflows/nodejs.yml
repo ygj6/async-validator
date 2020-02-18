@@ -19,7 +19,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: | 
-        if [ "${{ matrix.test-type }}" = test ]; then
+        if [ "${{ matrix.test-type }}" = "test" ]; then
           npm test
         else
           npm run ${{ matrix.test-type }}
