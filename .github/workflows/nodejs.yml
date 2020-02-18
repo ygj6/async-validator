@@ -25,5 +25,12 @@ jobs:
         else
           npm run ${{ matrix.test-type }}
         fi  
+        
+    - name: Coveralls Parallel
+      uses: coverallsapp/github-action@master
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        parallel: true
+        path-to-lcov: ./coverage/lcov.info
       env:
         CI: true
