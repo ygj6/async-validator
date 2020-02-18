@@ -58,7 +58,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "coverage": "jest --coverage && cat ./coverage/lcov.info | coveralls",
-    "coverage:action": "jest --coverage"
+    "coverage:action": "jest --coverage",
     "version": "npm run build"
   },
   "devDependencies": {
