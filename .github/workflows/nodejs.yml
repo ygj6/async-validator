@@ -21,7 +21,7 @@ jobs:
     strategy:
       matrix:
         node-version: [10.x]
-        test-type: [test, coverage:action]
+        test-type: [test, coverage]
 
     steps:
     - uses: actions/checkout@v2
@@ -35,13 +35,13 @@ jobs:
         if [ "${{ matrix.test-type }}" = "test" ]; then
           npm test
         else
-          npm run ${{ matrix.test-type }}
+          npm run ${{ matrix.test-type }}:action
         fi  
         
     - name: Coveralls Parallel
       uses: coverallsapp/github-action@master
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
-      if: matrix.test-type == 'coverage:action'
+      if: matrix.test-type == 'coverage'
       env:
         CI: true
