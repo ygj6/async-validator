@@ -57,7 +57,7 @@
     "build": "pika-pack build",
     "test": "jest",
     "test:watch": "jest --watch",
-    "coverage": "jest --coverage && cat ./coverage/lcov.info | coveralls",
+    "coverage": "jest --coverage",
     "version": "npm run build"
   },
   "devDependencies": {
