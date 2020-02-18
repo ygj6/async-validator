@@ -9,7 +9,7 @@
     "async"
   ],
   "homepage": "http://github.com/wangsongc/async-validator",
-  "author": "yiminghe@gmail.com",
+  "author": "wangsongc@gmail.com",
   "repository": {
     "type": "git",
     "url": "git@github.com:wangsongc/async-validator.git"
@@ -44,7 +44,7 @@
     ]
   },
   "bugs": {
-    "url": "http://github.com/yiminghe/async-validator/issues"
+    "url": "http://github.com/wangsongc/async-validator/issues"
   },
   "license": "MIT",
   "config": {
