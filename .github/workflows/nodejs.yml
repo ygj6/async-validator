@@ -19,6 +19,10 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: | 
-        npm run ${{ matrix.test-type }}
+        if [ "${{ matrix.test-type }}" = test ]; then
+          npm test
+        else
+          npm run ${{ matrix.test-type }}
+        fi  
       env:
         CI: true
