@@ -8,11 +8,11 @@
     "validate",
     "async"
   ],
-  "homepage": "http://github.com/yiminghe/async-validator",
+  "homepage": "http://github.com/wangsongc/async-validator",
   "author": "yiminghe@gmail.com",
   "repository": {
     "type": "git",
-    "url": "git@github.com:yiminghe/async-validator.git"
+    "url": "git@github.com:wangsongc/async-validator.git"
   },
   "@pika/pack": {
     "pipeline": [
