@@ -30,12 +30,12 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: test or coverage
-      run: | 
+      run: |
         npm install
         if [ "${{ matrix.test-type }}" = "test" ]; then
           npm test
         else
-          npm run ${{ matrix.test-type }}:action
+          npm run coverage:action
         fi  
         
     - name: Coveralls Parallel
